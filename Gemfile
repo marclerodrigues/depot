@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Enables Haml as Template engine
 gem "haml-rails", "~> 0.9"
 
+gem 'annotate', github: 'ctran/annotate_models'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,6 +43,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'simplecov'
+  gem 'guard-rspec'
 
 end
 
