@@ -3,5 +3,10 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   cities = City.create([{ title: 'Chicago' }, { title: 'Copenhagen' }])
+#   Mayor.create(title: 'Emanuel', city: cities.first)
+Product.create(title: 'Germany', price: 818.31000)
+Product.create(title: 'France', price: 65447.374)
+Product.create(title: 'Belgium', price: 10839.905)
+Product.create(title: 'Netherlands', price: 1668.0000)
+Product.create(title: 'Austria', price: 8440.465)

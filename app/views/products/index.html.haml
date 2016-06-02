@@ -1,0 +1,23 @@
+-if @products.any?
+  = link_to 'New Product', new_product_path
+  %table
+    %thead
+      %tr
+        %td Title
+        %td Price
+        %td Options
+    - @products.each do |product|
+      %tbody
+        %tr
+          %td
+            = product.title
+          %td
+            = product.price
+          %td
+            = link_to 'See', product_path(product)
+            = link_to 'Edit', edit_product_path(product)
+-else
+  %h4
+    \ No products yet, create
+    = link_to "one", new_product_path
+    \.
