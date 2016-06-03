@@ -6,8 +6,8 @@
         %td Title
         %td Price
         %td Options
-    - @products.each do |product|
-      %tbody
+    %tbody
+      - @products.each do |product|
         %tr
           %td
             = product.title

@@ -1,0 +1,16 @@
+-if @products.any?
+  %table
+    %thead
+      %tr
+        %td Title
+        %td Price
+
+    %tbody
+      - @products.each do |product|
+        %tr
+          %td
+            = product.title
+          %td
+            = number_to_currency product.price, :unit => 'R$', :delimiter => ".", :separator => ","
+          %td
+            = link_to 'Buy', product_path(product)
