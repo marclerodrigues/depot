@@ -1,0 +1,8 @@
+- if line_item == @current_item
+  %li#current_item
+- else
+  %li
+    = line_item.product.title
+    = line_item.product.price
+    = line_item.quantity
+    = number_to_currency line_item.total_price, :unit => "R$"
